@@ -22,7 +22,7 @@ public class Ejercicio1 {
 		
 		Pattern ex = Pattern.compile("(\\w(\\.\\w+)*)@\\w+(\\.\\w+)+");
 		Matcher m = ex.matcher(s);
-		while (m.find()) {
+			while (m.find()) {
 			int numgrupos = m.groupCount();
 			for (int i = 0; i <= numgrupos; i++) {
 				System.out.println(m.group(i));
